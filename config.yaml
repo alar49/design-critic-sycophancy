@@ -53,7 +53,7 @@ providers:
 #  - {name: model-c, provider: mistral, model: mistral-model-id, tpm: 18000}
 
 models:
-  - {name: gpt-oss-120b-medium, provider: openrouter, model: openai/gpt-oss-120b, temperature: 1.0, rpm: 120, reasoning: "on", reasoning_effort: medium, #openrouter_provider: {order: [crusoe/bf16, dekallm/bf16, akashml/bf16], allow_fallbacks: false, require_parameters: true}}
+  - {name: gpt-oss-120b-medium, provider: openrouter, model: openai/gpt-oss-120b, temperature: 1.0, rpm: 120, reasoning: "on", reasoning_effort: medium, openrouter_provider: {order: [crusoe/bf16, dekallm/bf16, akashml/bf16], allow_fallbacks: false, require_parameters: true}}
   - {name: deepseek-v4-flash-0731, provider: openrouter, model: deepseek/deepseek-v4-flash-0731, temperature: 1.0, rpm: 120, reasoning: "on", reasoning_effort: low, openrouter_provider: {order: [reka, digitalocean, wafer/fast, cohere], allow_fallbacks: false, require_parameters: true}, max_tokens: 32000}
   - {name: gemma-4-31b, provider: openrouter, model: google/gemma-4-31b-it, temperature: 1.0, extra: {top_p: 0.95, top_k: 64}, reasoning: "on", timeout: 1500, openrouter_provider: {order: [crusoe/bf16, deepinfra/fp8, parasail/fp8], allow_fallbacks: false, require_parameters: true}, concurrency: 30, max_tokens: 32000}
   - {name: qwen3.8-27b, provider: openrouter, model: qwen/qwen3.8-27b, temperature: 0.7, rpm: 120, reasoning: "on", reasoning_effort: low, openrouter_provider: {order: [wafer, dekallm, phala], allow_fallbacks: false, require_parameters: true}}

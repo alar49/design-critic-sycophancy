@@ -144,7 +144,7 @@ Four open models through OpenRouter, reasoning on (settings per model in `config
 
 DeepSeek, gpt-oss and Qwen completed all their trials in a single run. 68 of their trials (1.6%) needed an automatic retry after a timeout or a server error, and all of them then completed; call time includes these retries. Gemma completed 1,435 of 1,440 trials: 4 replies were empty and 1 call failed with a provider error (HTTP 520). These 5 trials were not re-asked.
 
-**Table 2. Tokens and cost.**
+**Table 2. Tokens.**
 
 | Model | Input tokens per trial | Output tokens per trial | of which reasoning | Total output tokens |
 |---|---:|---:|---:|---:|
