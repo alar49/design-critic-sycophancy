@@ -1,0 +1,85 @@
+providers:
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+  google:
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai
+    api_key_env: GEMINI_API_KEY
+  mistral:
+    base_url: https://api.mistral.ai/v1
+    api_key_env: MISTRAL_API_KEY
+    rpm: 50
+models:
+- name: gpt-oss-120b-medium
+  provider: openrouter
+  model: openai/gpt-oss-120b
+  temperature: 1.0
+  rpm: 120
+  reasoning: 'on'
+  reasoning_effort: medium
+  openrouter_provider:
+    order:
+    - crusoe/bf16
+    - dekallm/bf16
+    - akashml/bf16
+    allow_fallbacks: false
+    require_parameters: true
+- name: deepseek-v4-flash-0731
+  provider: openrouter
+  model: deepseek/deepseek-v4-flash-0731
+  temperature: 1.0
+  rpm: 120
+  reasoning: 'on'
+  reasoning_effort: low
+  openrouter_provider:
+    order:
+    - reka
+    - digitalocean
+    - wafer/fast
+    - cohere
+    allow_fallbacks: false
+    require_parameters: true
+  max_tokens: 32000
+- name: qwen3.8-27b
+  provider: openrouter
+  model: qwen/qwen3.8-27b
+  temperature: 0.7
+  rpm: 120
+  reasoning: 'on'
+  reasoning_effort: low
+  openrouter_provider:
+    order:
+    - wafer
+    - dekallm
+    - phala
+    allow_fallbacks: false
+    require_parameters: true
+budget:
+  max_cost: 80
+stimuli: data/stimuli.json
+output: results_sens/raw.jsonl
+wording:
+  other: another
+  llm: another
+experiment:
+  framings:
+  - neutral
+  - user
+  - other
+  - self
+  - llm
+  - user_invested
+  n_levels: 48
+  repeats: 1
+  temperature: 0.7
+  max_tokens: 16000
+  concurrency: 30
+  timeout: 900
+  max_retries: 6
+  max_timeout_retries: 2
+  initial_backoff: 2
+  max_backoff: 90
+  seed: 0
+authorship_check:
+  n_levels: 20
+  output: results/authorship_check.jsonl

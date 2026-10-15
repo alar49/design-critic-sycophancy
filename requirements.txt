@@ -1,0 +1,7 @@
+numpy
+pillow
+pandas
+scipy
+pyyaml
+tabulate
+pcg_benchmark @ git+https://github.com/amidos2006/pcg_benchmark.git@657aec8b3ad06b033bde4d88f02c3145bb7848fe

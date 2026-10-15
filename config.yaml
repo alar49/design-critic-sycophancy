@@ -1,0 +1,95 @@
+# Experiment configuration. Edit the model list before a real run.
+
+# API providers. Each one needs its key in .env, under the name given in api_key_env.
+# All three speak the same OpenAI-style chat API. Optional limits for everything sent to a provider
+# (shared by all its models): rpm = requests per minute, tpm = tokens per minute (input + output).
+providers:
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+  google:                      # Google AI Studio (Gemini API), OpenAI-compatible endpoint
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai
+    api_key_env: GEMINI_API_KEY
+  mistral:
+    base_url: https://api.mistral.ai/v1
+    api_key_env: MISTRAL_API_KEY
+    rpm: 50                    # free tier: 1 request per second for the whole workspace
+
+# Models to test. Required:
+#   name:      label used in the results (must be unique)
+#   provider:  one of the providers above
+#   model:     that provider's own model ID (openrouter.ai/models, AI Studio, Mistral docs)
+# Optional, per model (these override the `experiment` defaults below):
+#   temperature:          null = provider default
+#   max_tokens, timeout:  output cap; seconds before one call counts as timed out
+#   rpm, tpm:             limits for this model only (Mistral shows them under Admin > Limits)
+#   concurrency:          calls in flight at once for this model (all models run at the same time)
+#   reasoning:            default | on | off. "default" sends nothing and lets the provider decide,
+#                         which for several models means reasoning ON; to turn it off, say off.
+#                         (Quotes are optional everywhere in this file: on/off are understood either way.)
+#   reasoning_effort:     with reasoning: on, e.g. low | medium | high
+#   openrouter_provider:  OpenRouter routing, sent as the request's `provider` object, e.g.
+#                         {order: [deepinfra], allow_fallbacks: false, require_parameters: true}
+#                         order: providers to try, in order; allow_fallbacks: false = never use others;
+#                         require_parameters: true = skip providers that would ignore a setting
+#                         (such as reasoning); quantizations: [fp8] = only those precisions.
+#   price_in, price_out:  USD per 1M input / output tokens; only needed where the provider does not
+#                         report the cost of each call itself (OpenRouter does)
+#   max_cost:             spending cap for this model, in USD
+#   extra:                any other request fields, passed through as they are
+# The reasoning trace is stored apart from the answer (`reasoning` in results/raw.jsonl) and is never
+# used for scoring; `served_by` records which provider OpenRouter actually used for each call.
+
+# Example:
+# - {name: gpt-oss-120b, provider: openrouter, model: openai/gpt-oss-120b, temperature: 1.0,
+#   reasoning: on, reasoning_effort: low,
+#   openrouter_provider: {order: [deepinfra, deepinfra/turbo, google-vertex/us-east5], allow_fallbacks: false, require_parameters: true}}
+
+# Placeholders below: replace them before running for real.
+
+#models:
+#  - {name: model-a, provider: openrouter, model: provider/model-a}
+#  - {name: model-b, provider: google, model: gemini-model-id, rpm: 10}
+#  - {name: model-c, provider: mistral, model: mistral-model-id, tpm: 18000}
+
+models:
+  - {name: gpt-oss-120b-medium, provider: openrouter, model: openai/gpt-oss-120b, temperature: 1.0, rpm: 120, reasoning: "on", reasoning_effort: medium, #openrouter_provider: {order: [crusoe/bf16, dekallm/bf16, akashml/bf16], allow_fallbacks: false, require_parameters: true}}
+  - {name: deepseek-v4-flash-0731, provider: openrouter, model: deepseek/deepseek-v4-flash-0731, temperature: 1.0, rpm: 120, reasoning: "on", reasoning_effort: low, openrouter_provider: {order: [reka, digitalocean, wafer/fast, cohere], allow_fallbacks: false, require_parameters: true}, max_tokens: 32000}
+  - {name: gemma-4-31b, provider: openrouter, model: google/gemma-4-31b-it, temperature: 1.0, extra: {top_p: 0.95, top_k: 64}, reasoning: "on", timeout: 1500, openrouter_provider: {order: [crusoe/bf16, deepinfra/fp8, parasail/fp8], allow_fallbacks: false, require_parameters: true}, concurrency: 30, max_tokens: 32000}
+  - {name: qwen3.8-27b, provider: openrouter, model: qwen/qwen3.8-27b, temperature: 0.7, rpm: 120, reasoning: "on", reasoning_effort: low, openrouter_provider: {order: [wafer, dekallm, phala], allow_fallbacks: false, require_parameters: true}}
+
+
+# Spending cap for the whole run, in USD (null = no cap). It counts earlier runs into the same results
+# file too. Once reached, no new calls start; calls already in flight finish, so the total can end
+# slightly above the cap. Costs come from the provider (OpenRouter) or from price_in/price_out.
+budget:
+  max_cost: 80
+
+stimuli: data/stimuli.json
+output: results/raw.jsonl
+
+# Wording for the authors outside the conversation: "plain" ("someone", "an AI model") or
+# "another" ("someone else", "another AI model"). Fix this with the authorship pre-test
+# (python -m critic.check_authorship) BEFORE the main run, and do not change it afterwards.
+wording:
+  other: another
+  llm: another
+
+experiment:
+  framings: [neutral, user, other, self, llm, user_invested]   # see critic/prompts.py
+  n_levels: 48          # base levels to use: 24 or 48 (the first N in the stimulus file)
+  repeats: 1            # calls per model x level x framing (more base levels beat more repeats)
+  temperature: 0.7      # set to null for models that reject a temperature value
+  max_tokens: 16000       # raise for reasoning models, which spend tokens thinking (before it was 600)
+  concurrency: 30        # calls in flight per model (models run in parallel with each other); (before it was 4)
+  timeout: 900          # seconds before a single call counts as timed out
+  max_retries: 6        # attempts for rate limits (429), server errors (5xx) and dropped connections
+  max_timeout_retries: 2  # extra attempts after a timeout, counted separately from max_retries
+  initial_backoff: 2    # seconds before the first retry; doubles each time
+  max_backoff: 90       # longest wait between retries (also caps a provider's Retry-After)
+  seed: 0               # trial order shuffle
+
+# Authorship pre-test (critic/check_authorship.py): perfect levels per wording, per model.
+authorship_check:
+  n_levels: 20
+  output: results/authorship_check.jsonl

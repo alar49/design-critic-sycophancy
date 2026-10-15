@@ -1,0 +1,3857 @@
+{
+ "meta": {
+  "problem": "zelda-v0",
+  "seed": 0,
+  "n_levels": 48,
+  "variants": [
+   "none",
+   "no_key",
+   "extra_player",
+   "door_blocked",
+   "no_enemies"
+  ],
+  "base_attempts": 60
+ },
+ "stimuli": [
+  {
+   "level_id": "L00",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 16,
+    "key_door": 5
+   },
+   "text": "....#.##E.#\n......##...\n.#.#....##K\n.###.#...E.\n@.#....#...\n#.##.##.DEE\n..##..###.#"
+  },
+  {
+   "level_id": "L00",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "....#.##E.#\n......##...\n.#.#....##.\n.###.#...E.\n@.#....#...\n#.##.##.DEE\n..##..###.#"
+  },
+  {
+   "level_id": "L00",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 13,
+    "key_door": 5
+   },
+   "text": "....#.##E.#\n@.....##...\n.#.#....##K\n.###.#...E.\n@.#....#...\n#.##.##.DEE\n..##..###.#"
+  },
+  {
+   "level_id": "L00",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 16,
+    "key_door": -1
+   },
+   "text": "....#.##E.#\n......##...\n.#.#....##K\n.###.#...E.\n@.#....##..\n#.##.###D#E\n..##..###.#"
+  },
+  {
+   "level_id": "L00",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 16,
+    "key_door": 5
+   },
+   "text": "....#.##..#\n......##...\n.#.#....##K\n.###.#.....\n@.#....#...\n#.##.##.D..\n..##..###.#"
+  },
+  {
+   "level_id": "L01",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 7
+   },
+   "text": "##.#.......\n...#...@..#\n##..E.###.#\n####.#..E##\n####.#K.#.#\n...#E.#...#\n##.D.E...##"
+  },
+  {
+   "level_id": "L01",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##.#.......\n...#...@..#\n##..E.###.#\n####.#..E##\n####.#..#.#\n...#E.#...#\n##.D.E...##"
+  },
+  {
+   "level_id": "L01",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 7
+   },
+   "text": "##.#.......\n...#...@.@#\n##..E.###.#\n####.#..E##\n####.#K.#.#\n...#E.#...#\n##.D.E...##"
+  },
+  {
+   "level_id": "L01",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": -1
+   },
+   "text": "##.#.......\n...#...@..#\n##..E.###.#\n####.#..E##\n####.#K.#.#\n...#E.#...#\n###D#E...##"
+  },
+  {
+   "level_id": "L01",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 14,
+    "key_door": 7
+   },
+   "text": "##.#.......\n...#...@..#\n##....###.#\n####.#...##\n####.#K.#.#\n...#..#...#\n##.D.....##"
+  },
+  {
+   "level_id": "L02",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "@...#....#.\n#E#.#.#....\n.#E.E.##.#.\n..##.#####D\n#.#...####.\n...E..K#...\n..#..######"
+  },
+  {
+   "level_id": "L02",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "@...#....#.\n#E#.#.#....\n.#E.E.##.#.\n..##.#####D\n#.#...####.\n...E...#...\n..#..######"
+  },
+  {
+   "level_id": "L02",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "@...#....#.\n#E#.#.#...@\n.#E.E.##.#.\n..##.#####D\n#.#...####.\n...E..K#...\n..#..######"
+  },
+  {
+   "level_id": "L02",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "@...#....#.\n#E#.#.#....\n.#E.E.##.##\n..##.#####D\n#.#...#####\n...E..K#...\n..#..######"
+  },
+  {
+   "level_id": "L02",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "@...#....#.\n#.#.#.#....\n.#....##.#.\n..##.#####D\n#.#...####.\n......K#...\n..#..######"
+  },
+  {
+   "level_id": "L03",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": "E##..###...\n.....E.K#..\n#.##.E#.##.\n...##.##E..\n.#......@#.\n.#.#.......\n.......##D#"
+  },
+  {
+   "level_id": "L03",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "E##..###...\n.....E..#..\n#.##.E#.##.\n...##.##E..\n.#......@#.\n.#.#.......\n.......##D#"
+  },
+  {
+   "level_id": "L03",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 15,
+    "key_door": 11
+   },
+   "text": "E##..###.@.\n.....E.K#..\n#.##.E#.##.\n...##.##E..\n.#......@#.\n.#.#.......\n.......##D#"
+  },
+  {
+   "level_id": "L03",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "E##..###...\n.....E.K#..\n#.##.E#.##.\n...##.##E..\n.#......@#.\n.#.#.....#.\n.......##D#"
+  },
+  {
+   "level_id": "L03",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": ".##..###...\n.......K#..\n#.##..#.##.\n...##.##...\n.#......@#.\n.#.#.......\n.......##D#"
+  },
+  {
+   "level_id": "L04",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "...#.....##\n..@.#D.....\n#.#.#.###..\n##..#......\n.K.##.E##..\n#....###.E.\n...#..EE..#"
+  },
+  {
+   "level_id": "L04",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "...#.....##\n..@.#D.....\n#.#.#.###..\n##..#......\n...##.E##..\n#....###.E.\n...#..EE..#"
+  },
+  {
+   "level_id": "L04",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "...#.....##\n..@.#D.....\n#.#.#.###..\n##.@#......\n.K.##.E##..\n#....###.E.\n...#..EE..#"
+  },
+  {
+   "level_id": "L04",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "...#.#...##\n..@.#D#....\n#.#.#####..\n##..#......\n.K.##.E##..\n#....###.E.\n...#..EE..#"
+  },
+  {
+   "level_id": "L04",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "...#.....##\n..@.#D.....\n#.#.#.###..\n##..#......\n.K.##..##..\n#....###...\n...#......#"
+  },
+  {
+   "level_id": "L05",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 11,
+    "key_door": 11
+   },
+   "text": "....#.E.##.\nE..#..#..@.\n#.#####...#\n#.K.##....#\n#.#..E.#...\n#....##D.##\n##...#..###"
+  },
+  {
+   "level_id": "L05",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "....#.E.##.\nE..#..#..@.\n#.#####...#\n#...##....#\n#.#..E.#...\n#....##D.##\n##...#..###"
+  },
+  {
+   "level_id": "L05",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 11,
+    "key_door": 11
+   },
+   "text": "....#.E.##.\nE..#..#..@.\n#.#####...#\n#.K.##....#\n#.#..E.#...\n#....##D.##\n##...#@.###"
+  },
+  {
+   "level_id": "L05",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "....#.E.##.\nE..#..#..@.\n#.#####...#\n#.K.##....#\n#.#..E.#...\n#....##D###\n##...#.####"
+  },
+  {
+   "level_id": "L05",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 11
+   },
+   "text": "....#...##.\n...#..#..@.\n#.#####...#\n#.K.##....#\n#.#....#...\n#....##D.##\n##...#..###"
+  },
+  {
+   "level_id": "L06",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 17
+   },
+   "text": "#K##..##...\n#.#....#..#\n@.#.E..E..D\n#.E#.#.###.\n#.##...E...\n#.....###..\n#.###...###"
+  },
+  {
+   "level_id": "L06",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#.##..##...\n#.#....#..#\n@.#.E..E..D\n#.E#.#.###.\n#.##...E...\n#.....###..\n#.###...###"
+  },
+  {
+   "level_id": "L06",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 17
+   },
+   "text": "#K##..##...\n#.#....#..#\n@.#.E@.E..D\n#.E#.#.###.\n#.##...E...\n#.....###..\n#.###...###"
+  },
+  {
+   "level_id": "L06",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": -1
+   },
+   "text": "#K##..##...\n#.#....#..#\n@.#.E..E.#D\n#.E#.#.####\n#.##...E...\n#.....###..\n#.###...###"
+  },
+  {
+   "level_id": "L06",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 3,
+    "key_door": 17
+   },
+   "text": "#K##..##...\n#.#....#..#\n@.#.......D\n#..#.#.###.\n#.##.......\n#.....###..\n#.###...###"
+  },
+  {
+   "level_id": "L07",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 17
+   },
+   "text": ".D#..@E...#\n....#.#..#.\n.#..###....\n.##.E##..#.\n..##.....#.\n.##.#.###KE\n###.E...#.#"
+  },
+  {
+   "level_id": "L07",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".D#..@E...#\n....#.#..#.\n.#..###....\n.##.E##..#.\n..##.....#.\n.##.#.###.E\n###.E...#.#"
+  },
+  {
+   "level_id": "L07",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 17
+   },
+   "text": ".D#..@E...#\n....#.#..#.\n.#..###....\n.##.E##..#.\n..##.....#.\n@##.#.###KE\n###.E...#.#"
+  },
+  {
+   "level_id": "L07",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "#D#..@E...#\n.#..#.#..#.\n.#..###....\n.##.E##..#.\n..##.....#.\n.##.#.###KE\n###.E...#.#"
+  },
+  {
+   "level_id": "L07",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 17
+   },
+   "text": ".D#..@....#\n....#.#..#.\n.#..###....\n.##..##..#.\n..##.....#.\n.##.#.###K.\n###.....#.#"
+  },
+  {
+   "level_id": "L08",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": "#.###....#.\nE....#.#...\n.#K#..E.#..\n##E##.##..#\n##..#...#..\nE.#.#.#.#..\n#@...#.D###"
+  },
+  {
+   "level_id": "L08",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#.###....#.\nE....#.#...\n.#.#..E.#..\n##E##.##..#\n##..#...#..\nE.#.#.#.#..\n#@...#.D###"
+  },
+  {
+   "level_id": "L08",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": "#.###....#.\nE....#.#...\n.#K#..E.#..\n##E##.##..#\n##..#...#..\nE.#.#.#.#..\n#@@..#.D###"
+  },
+  {
+   "level_id": "L08",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": -1
+   },
+   "text": "#.###....#.\nE....#.#...\n.#K#..E.#..\n##E##.##..#\n##..#...#..\nE.#.#.###..\n#@...##D###"
+  },
+  {
+   "level_id": "L08",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": "#.###....#.\n.....#.#...\n.#K#....#..\n##.##.##..#\n##..#...#..\n..#.#.#.#..\n#@...#.D###"
+  },
+  {
+   "level_id": "L09",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 13
+   },
+   "text": ".D#....@...\n....###.##.\n...#......#\n###E...####\n.###.#KE#..\n..#E.#.....\n#..E.#..#.#"
+  },
+  {
+   "level_id": "L09",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".D#....@...\n....###.##.\n...#......#\n###E...####\n.###.#.E#..\n..#E.#.....\n#..E.#..#.#"
+  },
+  {
+   "level_id": "L09",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 13
+   },
+   "text": ".D#....@...\n....###.##.\n...#......#\n###E...####\n.###.#KE#..\n..#E.#.....\n#.@E.#..#.#"
+  },
+  {
+   "level_id": "L09",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": -1
+   },
+   "text": "#D#....@...\n.#..###.##.\n...#......#\n###E...####\n.###.#KE#..\n..#E.#.....\n#..E.#..#.#"
+  },
+  {
+   "level_id": "L09",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 5,
+    "key_door": 13
+   },
+   "text": ".D#....@...\n....###.##.\n...#......#\n###....####\n.###.#K.#..\n..#..#.....\n#....#..#.#"
+  },
+  {
+   "level_id": "L10",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "##.#...K.##\n#D.#.E#..#.\n..#....E##.\n..E##..#.#E\n.#..#..#...\n#.@#.......\n#....#....#"
+  },
+  {
+   "level_id": "L10",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##.#.....##\n#D.#.E#..#.\n..#....E##.\n..E##..#.#E\n.#..#..#...\n#.@#.......\n#....#....#"
+  },
+  {
+   "level_id": "L10",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "##.#...K.##\n#D.#.E#..#.\n..#....E##.\n..E##..#.#E\n.#..#..#...\n#.@#.......\n#.@..#....#"
+  },
+  {
+   "level_id": "L10",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": -1
+   },
+   "text": "##.#...K.##\n#D##.E#..#.\n.##....E##.\n..E##..#.#E\n.#..#..#...\n#.@#.......\n#....#....#"
+  },
+  {
+   "level_id": "L10",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "##.#...K.##\n#D.#..#..#.\n..#.....##.\n...##..#.#.\n.#..#..#...\n#.@#.......\n#....#....#"
+  },
+  {
+   "level_id": "L11",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 4,
+    "key_door": 14
+   },
+   "text": "#.##E...#..\n.....#D....\n#.###..###.\n.###.#..EE#\n...K..###.#\n#...#....E.\n#..#.@###.#"
+  },
+  {
+   "level_id": "L11",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#.##E...#..\n.....#D....\n#.###..###.\n.###.#..EE#\n......###.#\n#...#....E.\n#..#.@###.#"
+  },
+  {
+   "level_id": "L11",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": 14
+   },
+   "text": "#.##E...#..\n.....#D....\n#.###..###@\n.###.#..EE#\n...K..###.#\n#...#....E.\n#..#.@###.#"
+  },
+  {
+   "level_id": "L11",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.4384,
+   "facts": {
+    "regions": 6,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 4,
+    "key_door": -1
+   },
+   "text": "#.##E.#.#..\n.....#D#...\n#.###.####.\n.###.#..EE#\n...K..###.#\n#...#....E.\n#..#.@###.#"
+  },
+  {
+   "level_id": "L11",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 4,
+    "key_door": 14
+   },
+   "text": "#.##....#..\n.....#D....\n#.###..###.\n.###.#....#\n...K..###.#\n#...#......\n#..#.@###.#"
+  },
+  {
+   "level_id": "L12",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": "##..#...#E.\n.#.##..K#..\n.#.##..#..#\n.#...#....#\n.D#E#....@#\n.E......#.#\n.##E#####.#"
+  },
+  {
+   "level_id": "L12",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##..#...#E.\n.#.##...#..\n.#.##..#..#\n.#...#....#\n.D#E#....@#\n.E......#.#\n.##E#####.#"
+  },
+  {
+   "level_id": "L12",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 11
+   },
+   "text": "##..#...#E.\n.#.##..K#..\n.#.##..#..#\n.#...#@...#\n.D#E#....@#\n.E......#.#\n.##E#####.#"
+  },
+  {
+   "level_id": "L12",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 7,
+    "key_door": -1
+   },
+   "text": "##..#...#E.\n.#.##..K#..\n.#.##..#..#\n.#...#....#\n#D#E#....@#\n.#......#.#\n.##E#####.#"
+  },
+  {
+   "level_id": "L12",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": "##..#...#..\n.#.##..K#..\n.#.##..#..#\n.#...#....#\n.D#.#....@#\n........#.#\n.##.#####.#"
+  },
+  {
+   "level_id": "L13",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 13
+   },
+   "text": "#D.#####..#\n#...#..##..\n#.E..#..##.\n...##K.###.\n....##.#.#E\n.##.E...E#.\n.####.#.@.."
+  },
+  {
+   "level_id": "L13",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#D.#####..#\n#...#..##..\n#.E..#..##.\n...##..###.\n....##.#.#E\n.##.E...E#.\n.####.#.@.."
+  },
+  {
+   "level_id": "L13",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 13
+   },
+   "text": "#D.#####..#\n#...#..##..\n#.E.@#..##.\n...##K.###.\n....##.#.#E\n.##.E...E#.\n.####.#.@.."
+  },
+  {
+   "level_id": "L13",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "#D######..#\n##..#..##..\n#.E..#..##.\n...##K.###.\n....##.#.#E\n.##.E...E#.\n.####.#.@.."
+  },
+  {
+   "level_id": "L13",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 13
+   },
+   "text": "#D.#####..#\n#...#..##..\n#....#..##.\n...##K.###.\n....##.#.#.\n.##......#.\n.####.#.@.."
+  },
+  {
+   "level_id": "L14",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 17,
+    "key_door": 15
+   },
+   "text": "#....#.####\n.....E.E.E.\n#..K..#E.#.\n##.#.#..###\n#.###...##.\n#@#.#..##D.\n#.........."
+  },
+  {
+   "level_id": "L14",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#....#.####\n.....E.E.E.\n#.....#E.#.\n##.#.#..###\n#.###...##.\n#@#.#..##D.\n#.........."
+  },
+  {
+   "level_id": "L14",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 4,
+    "key_door": 15
+   },
+   "text": "#@...#.####\n.....E.E.E.\n#..K..#E.#.\n##.#.#..###\n#.###...##.\n#@#.#..##D.\n#.........."
+  },
+  {
+   "level_id": "L14",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 17,
+    "key_door": -1
+   },
+   "text": "#....#.####\n.....E.E.E.\n#..K..#E.#.\n##.#.#..###\n#.###...##.\n#@#.#..##D#\n#........#."
+  },
+  {
+   "level_id": "L14",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 17,
+    "key_door": 15
+   },
+   "text": "#....#.####\n...........\n#..K..#..#.\n##.#.#..###\n#.###...##.\n#@#.#..##D.\n#.........."
+  },
+  {
+   "level_id": "L15",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 4,
+    "key_door": 17
+   },
+   "text": "#..#.##....\n..@........\n.#.E.##.E.#\n##.##.E##..\n#K.#.#D...#\n#.....##...\n#.#.#..E#.."
+  },
+  {
+   "level_id": "L15",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#..#.##....\n..@........\n.#.E.##.E.#\n##.##.E##..\n#..#.#D...#\n#.....##...\n#.#.#..E#.."
+  },
+  {
+   "level_id": "L15",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 17
+   },
+   "text": "#..#.##....\n.@@........\n.#.E.##.E.#\n##.##.E##..\n#K.#.#D...#\n#.....##...\n#.#.#..E#.."
+  },
+  {
+   "level_id": "L15",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 4,
+    "key_door": -1
+   },
+   "text": "#..#.##....\n..@........\n.#.E.##.E.#\n##.##.###..\n#K.#.#D#..#\n#.....##...\n#.#.#..E#.."
+  },
+  {
+   "level_id": "L15",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 4,
+    "key_door": 17
+   },
+   "text": "#..#.##....\n..@........\n.#...##...#\n##.##..##..\n#K.#.#D...#\n#.....##...\n#.#.#...#.."
+  },
+  {
+   "level_id": "L16",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 15
+   },
+   "text": "..##.E..E.#\n...#.#....#\n..###.....E\n#.K....#.##\n..#..###.#.\n.@#.#D#....\n#..#E....#."
+  },
+  {
+   "level_id": "L16",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "..##.E..E.#\n...#.#....#\n..###.....E\n#......#.##\n..#..###.#.\n.@#.#D#....\n#..#E....#."
+  },
+  {
+   "level_id": "L16",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 15
+   },
+   "text": "..##.E..E.#\n...#.#....#\n..###.....E\n#.K....#.##\n..#..###.#.\n.@#.#D#....\n#..#E...@#."
+  },
+  {
+   "level_id": "L16",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": -1
+   },
+   "text": "..##.E..E.#\n...#.#....#\n..###.....E\n#.K....#.##\n..#..###.#.\n.@#.#D#....\n#..#E#...#."
+  },
+  {
+   "level_id": "L16",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 3,
+    "key_door": 15
+   },
+   "text": "..##......#\n...#.#....#\n..###......\n#.K....#.##\n..#..###.#.\n.@#.#D#....\n#..#.....#."
+  },
+  {
+   "level_id": "L17",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 16
+   },
+   "text": "K##...#.###\n.####...#..\n..####D.#.E\n.#..#.....#\n.#..#...#..\n...E.#.#...\n@.##..E#E.."
+  },
+  {
+   "level_id": "L17",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".##...#.###\n.####...#..\n..####D.#.E\n.#..#.....#\n.#..#...#..\n...E.#.#...\n@.##..E#E.."
+  },
+  {
+   "level_id": "L17",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 16
+   },
+   "text": "K##...#.###\n.####...#..\n..####D.#.E\n.#..#.....#\n.#..#...#..\n...E.#.#...\n@@##..E#E.."
+  },
+  {
+   "level_id": "L17",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "K##...#.###\n.####.#.#..\n..####D##.E\n.#..#.#...#\n.#..#...#..\n...E.#.#...\n@.##..E#E.."
+  },
+  {
+   "level_id": "L17",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 16
+   },
+   "text": "K##...#.###\n.####...#..\n..####D.#..\n.#..#.....#\n.#..#...#..\n.....#.#...\n@.##...#..."
+  },
+  {
+   "level_id": "L18",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 5
+   },
+   "text": "######...##\n..#..#.##.#\nE..E...##.#\n.#.#####D.#\n@#E.##K#.##\n..#E.#.....\n###....###."
+  },
+  {
+   "level_id": "L18",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "######...##\n..#..#.##.#\nE..E...##.#\n.#.#####D.#\n@#E.##.#.##\n..#E.#.....\n###....###."
+  },
+  {
+   "level_id": "L18",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 18,
+    "key_door": 5
+   },
+   "text": "######..@##\n..#..#.##.#\nE..E...##.#\n.#.#####D.#\n@#E.##K#.##\n..#E.#.....\n###....###."
+  },
+  {
+   "level_id": "L18",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": -1
+   },
+   "text": "######...##\n..#..#.##.#\nE..E...##.#\n.#.#####D##\n@#E.##K####\n..#E.#.....\n###....###."
+  },
+  {
+   "level_id": "L18",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 14,
+    "key_door": 5
+   },
+   "text": "######...##\n..#..#.##.#\n.......##.#\n.#.#####D.#\n@#..##K#.##\n..#..#.....\n###....###."
+  },
+  {
+   "level_id": "L19",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 18
+   },
+   "text": "##.E.#.####\n..#.E#.#..#\n..E.##.E#.#\n.##.###.@.#\n..#.....###\nD###...##.K\n.###......#"
+  },
+  {
+   "level_id": "L19",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##.E.#.####\n..#.E#.#..#\n..E.##.E#.#\n.##.###.@.#\n..#.....###\nD###...##..\n.###......#"
+  },
+  {
+   "level_id": "L19",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 15,
+    "key_door": 18
+   },
+   "text": "##.E@#.####\n..#.E#.#..#\n..E.##.E#.#\n.##.###.@.#\n..#.....###\nD###...##.K\n.###......#"
+  },
+  {
+   "level_id": "L19",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": -1
+   },
+   "text": "##.E.#.####\n..#.E#.#..#\n..E.##.E#.#\n.##.###.@.#\n#.#.....###\nD###...##.K\n####......#"
+  },
+  {
+   "level_id": "L19",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 10,
+    "key_door": 18
+   },
+   "text": "##...#.####\n..#..#.#..#\n....##..#.#\n.##.###.@.#\n..#.....###\nD###...##.K\n.###......#"
+  },
+  {
+   "level_id": "L20",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 16
+   },
+   "text": "##..###....\n##.###E#E##\n...##..#...\n.##K#.@....\n....E.####.\n.#.#..#D.#.\n......#.E.."
+  },
+  {
+   "level_id": "L20",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##..###....\n##.###E#E##\n...##..#...\n.##.#.@....\n....E.####.\n.#.#..#D.#.\n......#.E.."
+  },
+  {
+   "level_id": "L20",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 16
+   },
+   "text": "##..###....\n##.###E#E##\n...##..#...\n.##K#.@....\n....E.####.\n.#.#..#D.#@\n......#.E.."
+  },
+  {
+   "level_id": "L20",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": -1
+   },
+   "text": "##..###....\n##.###E#E##\n...##..#...\n.##K#.@....\n....E.####.\n.#.#..#D##.\n......##E.."
+  },
+  {
+   "level_id": "L20",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 5,
+    "key_door": 16
+   },
+   "text": "##..###....\n##.###.#.##\n...##..#...\n.##K#.@....\n......####.\n.#.#..#D.#.\n......#...."
+  },
+  {
+   "level_id": "L21",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 17
+   },
+   "text": "E#.E.##...D\nE.#..E.##.#\n...K....#..\n.##....###.\n..#..#.#...\n...#.#..@##\n##...##.###"
+  },
+  {
+   "level_id": "L21",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "E#.E.##...D\nE.#..E.##.#\n........#..\n.##....###.\n..#..#.#...\n...#.#..@##\n##...##.###"
+  },
+  {
+   "level_id": "L21",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 17
+   },
+   "text": "E#.E.##...D\nE.#..E.##.#\n...K....#..\n.##....###.\n.@#..#.#...\n...#.#..@##\n##...##.###"
+  },
+  {
+   "level_id": "L21",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "E#.E.##..#D\nE.#..E.##.#\n...K....#..\n.##....###.\n..#..#.#...\n...#.#..@##\n##...##.###"
+  },
+  {
+   "level_id": "L21",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 17
+   },
+   "text": ".#...##...D\n..#....##.#\n...K....#..\n.##....###.\n..#..#.#...\n...#.#..@##\n##...##.###"
+  },
+  {
+   "level_id": "L22",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": ".D.@##.####\n..#.#..#...\n........#..\nE.##.##...#\n#..E#....##\n..###.##K##\n#...#E##E.."
+  },
+  {
+   "level_id": "L22",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".D.@##.####\n..#.#..#...\n........#..\nE.##.##...#\n#..E#....##\n..###.##.##\n#...#E##E.."
+  },
+  {
+   "level_id": "L22",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": ".D.@##.####\n..#.#..#...\n........#..\nE.##.##...#\n#..E#....##\n..###.##K##\n#@..#E##E.."
+  },
+  {
+   "level_id": "L22",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": -1
+   },
+   "text": "#D#@##.####\n.##.#..#...\n........#..\nE.##.##...#\n#..E#....##\n..###.##K##\n#...#E##E.."
+  },
+  {
+   "level_id": "L22",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": ".D.@##.####\n..#.#..#...\n........#..\n..##.##...#\n#...#....##\n..###.##K##\n#...#.##..."
+  },
+  {
+   "level_id": "L23",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 11
+   },
+   "text": "..EE...##.#\n.#..E.##..#\n.##.#K#...#\nE.#.#...##.\n#.#..##.#..\n@..#.##....\n##.#..D#.#."
+  },
+  {
+   "level_id": "L23",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "..EE...##.#\n.#..E.##..#\n.##.#.#...#\nE.#.#...##.\n#.#..##.#..\n@..#.##....\n##.#..D#.#."
+  },
+  {
+   "level_id": "L23",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": "..EE...##.#\n@#..E.##..#\n.##.#K#...#\nE.#.#...##.\n#.#..##.#..\n@..#.##....\n##.#..D#.#."
+  },
+  {
+   "level_id": "L23",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": -1
+   },
+   "text": "..EE...##.#\n.#..E.##..#\n.##.#K#...#\nE.#.#...##.\n#.#..##.#..\n@..#.##....\n##.#.#D#.#."
+  },
+  {
+   "level_id": "L23",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 14,
+    "key_door": 11
+   },
+   "text": ".......##.#\n.#....##..#\n.##.#K#...#\n..#.#...##.\n#.#..##.#..\n@..#.##....\n##.#..D#.#."
+  },
+  {
+   "level_id": "L24",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 26
+   },
+   "text": ".#.....@.##\n.K..E.##...\nE###.#.#.#.\n#...#..#.#.\n.#....#..#.\nE..#E##.#.#\nD#.#......."
+  },
+  {
+   "level_id": "L24",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".#.....@.##\n....E.##...\nE###.#.#.#.\n#...#..#.#.\n.#....#..#.\nE..#E##.#.#\nD#.#......."
+  },
+  {
+   "level_id": "L24",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 26
+   },
+   "text": ".#...@.@.##\n.K..E.##...\nE###.#.#.#.\n#...#..#.#.\n.#....#..#.\nE..#E##.#.#\nD#.#......."
+  },
+  {
+   "level_id": "L24",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 7,
+    "key_door": -1
+   },
+   "text": ".#.....@.##\n.K..E.##...\nE###.#.#.#.\n#...#..#.#.\n.#....#..#.\n#..#E##.#.#\nD#.#......."
+  },
+  {
+   "level_id": "L24",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 7,
+    "key_door": 26
+   },
+   "text": ".#.....@.##\n.K....##...\n.###.#.#.#.\n#...#..#.#.\n.#....#..#.\n...#.##.#.#\nD#.#......."
+  },
+  {
+   "level_id": "L25",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 19,
+    "key_door": 2
+   },
+   "text": "#####.@...#\n#...E.##...\n..#######..\nE.#..#K.D..\n.....#.##..\nE.#.#...##.\n.E#...#.###"
+  },
+  {
+   "level_id": "L25",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#####.@...#\n#...E.##...\n..#######..\nE.#..#..D..\n.....#.##..\nE.#.#...##.\n.E#...#.###"
+  },
+  {
+   "level_id": "L25",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 19,
+    "key_door": 2
+   },
+   "text": "#####.@...#\n#...E@##...\n..#######..\nE.#..#K.D..\n.....#.##..\nE.#.#...##.\n.E#...#.###"
+  },
+  {
+   "level_id": "L25",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 19,
+    "key_door": -1
+   },
+   "text": "#####.@...#\n#...E.##...\n..#######..\nE.#..#K#D#.\n.....#.##..\nE.#.#...##.\n.E#...#.###"
+  },
+  {
+   "level_id": "L25",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 19,
+    "key_door": 2
+   },
+   "text": "#####.@...#\n#.....##...\n..#######..\n..#..#K.D..\n.....#.##..\n..#.#...##.\n..#...#.###"
+  },
+  {
+   "level_id": "L26",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 9
+   },
+   "text": "@..##.#.E..\n#E..#.#E#..\n###.#..K..#\n..#.....#..\n#.E.#..##.#\n....#.#...#\n#.#.D######"
+  },
+  {
+   "level_id": "L26",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "@..##.#.E..\n#E..#.#E#..\n###.#.....#\n..#.....#..\n#.E.#..##.#\n....#.#...#\n#.#.D######"
+  },
+  {
+   "level_id": "L26",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 9
+   },
+   "text": "@..##.#.E..\n#E..#@#E#..\n###.#..K..#\n..#.....#..\n#.E.#..##.#\n....#.#...#\n#.#.D######"
+  },
+  {
+   "level_id": "L26",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "@..##.#.E..\n#E..#.#E#..\n###.#..K..#\n..#.....#..\n#.E.#..##.#\n....#.#...#\n#.##D######"
+  },
+  {
+   "level_id": "L26",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 9
+   },
+   "text": "@..##.#....\n#...#.#.#..\n###.#..K..#\n..#.....#..\n#...#..##.#\n....#.#...#\n#.#.D######"
+  },
+  {
+   "level_id": "L27",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 7
+   },
+   "text": "#...#E.D.E#\n#.#...####.\n#.##..##...\n#@###..K.#.\n#.#E..##.#.\n#.#.#E..#..\n#..#....##."
+  },
+  {
+   "level_id": "L27",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#...#E.D.E#\n#.#...####.\n#.##..##...\n#@###....#.\n#.#E..##.#.\n#.#.#E..#..\n#..#....##."
+  },
+  {
+   "level_id": "L27",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 7
+   },
+   "text": "#...#E.D.E#\n#.#...####.\n#.##..##...\n#@###..K.#.\n#@#E..##.#.\n#.#.#E..#..\n#..#....##."
+  },
+  {
+   "level_id": "L27",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": -1
+   },
+   "text": "#...#E#D#E#\n#.#...####.\n#.##..##...\n#@###..K.#.\n#.#E..##.#.\n#.#.#E..#..\n#..#....##."
+  },
+  {
+   "level_id": "L27",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 12,
+    "key_door": 7
+   },
+   "text": "#...#..D..#\n#.#...####.\n#.##..##...\n#@###..K.#.\n#.#...##.#.\n#.#.#...#..\n#..#....##."
+  },
+  {
+   "level_id": "L28",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "#..K##...@.\n##....E#.#.\n#.#.#..####\nE...#....##\n.##..#.#E.#\n#.#.#..##.#\n.E..#D.##.#"
+  },
+  {
+   "level_id": "L28",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#...##...@.\n##....E#.#.\n#.#.#..####\nE...#....##\n.##..#.#E.#\n#.#.#..##.#\n.E..#D.##.#"
+  },
+  {
+   "level_id": "L28",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "#..K##...@.\n##....E#.#.\n#.#.#..####\nE...#....##\n.##..#.#E.#\n#.#.#..##.#\n@E..#D.##.#"
+  },
+  {
+   "level_id": "L28",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "#..K##...@.\n##....E#.#.\n#.#.#..####\nE...#....##\n.##..#.#E.#\n#.#.##.##.#\n.E..#D###.#"
+  },
+  {
+   "level_id": "L28",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "#..K##...@.\n##.....#.#.\n#.#.#..####\n....#....##\n.##..#.#..#\n#.#.#..##.#\n....#D.##.#"
+  },
+  {
+   "level_id": "L29",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": 17
+   },
+   "text": "....#..#...\n#.####...D#\n#..#..#.#.#\n..E.....##K\n.#..#...##.\n###E..##E@.\n####..E..#."
+  },
+  {
+   "level_id": "L29",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "....#..#...\n#.####...D#\n#..#..#.#.#\n..E.....##.\n.#..#...##.\n###E..##E@.\n####..E..#."
+  },
+  {
+   "level_id": "L29",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "....#..#...\n#.####...D#\n#..#..#.#.#\n..E.....##K\n.#..#..@##.\n###E..##E@.\n####..E..#."
+  },
+  {
+   "level_id": "L29",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 3,
+    "key_door": -1
+   },
+   "text": "....#..#.#.\n#.####..#D#\n#..#..#.###\n..E.....##K\n.#..#...##.\n###E..##E@.\n####..E..#."
+  },
+  {
+   "level_id": "L29",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 3,
+    "key_door": 17
+   },
+   "text": "....#..#...\n#.####...D#\n#..#..#.#.#\n........##K\n.#..#...##.\n###...##.@.\n####.....#."
+  },
+  {
+   "level_id": "L30",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 17
+   },
+   "text": "##..##.....\n#......#...\n.D#######..\n.#...###..#\n###..#..#.#\n#E@E...K...\n##....E##E."
+  },
+  {
+   "level_id": "L30",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##..##.....\n#......#...\n.D#######..\n.#...###..#\n###..#..#.#\n#E@E.......\n##....E##E."
+  },
+  {
+   "level_id": "L30",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 17
+   },
+   "text": "##..##..@..\n#......#...\n.D#######..\n.#...###..#\n###..#..#.#\n#E@E...K...\n##....E##E."
+  },
+  {
+   "level_id": "L30",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": -1
+   },
+   "text": "##..##.....\n##.....#...\n#D#######..\n.#...###..#\n###..#..#.#\n#E@E...K...\n##....E##E."
+  },
+  {
+   "level_id": "L30",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 5,
+    "key_door": 17
+   },
+   "text": "##..##.....\n#......#...\n.D#######..\n.#...###..#\n###..#..#.#\n#.@....K...\n##.....##.."
+  },
+  {
+   "level_id": "L31",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": "..##..E##..\n..##.###...\n..@..####.#\n#D#.......#\n#.##...##..\nEE#..##..K.\n###..##E.#."
+  },
+  {
+   "level_id": "L31",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "..##..E##..\n..##.###...\n..@..####.#\n#D#.......#\n#.##...##..\nEE#..##....\n###..##E.#."
+  },
+  {
+   "level_id": "L31",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": "..##..E##..\n..##.###...\n..@..####.#\n#D#..@....#\n#.##...##..\nEE#..##..K.\n###..##E.#."
+  },
+  {
+   "level_id": "L31",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": -1
+   },
+   "text": "..##..E##..\n..##.###...\n.#@..####.#\n#D#.......#\n####...##..\nEE#..##..K.\n###..##E.#."
+  },
+  {
+   "level_id": "L31",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 10,
+    "key_door": 12
+   },
+   "text": "..##...##..\n..##.###...\n..@..####.#\n#D#.......#\n#.##...##..\n..#..##..K.\n###..##..#."
+  },
+  {
+   "level_id": "L32",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "..#.#.E#..#\n..#.#..#D..\n....K.##E..\n.E##..##.#.\n#...##....#\n.@##E..#..#\n......###.#"
+  },
+  {
+   "level_id": "L32",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "..#.#.E#..#\n..#.#..#D..\n......##E..\n.E##..##.#.\n#...##....#\n.@##E..#..#\n......###.#"
+  },
+  {
+   "level_id": "L32",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "..#.#.E#..#\n..#.#..#D..\n....K.##E..\n.E##..##.#.\n#...##....#\n.@##E..#..#\n..@...###.#"
+  },
+  {
+   "level_id": "L32",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "..#.#.E##.#\n..#.#..#D#.\n....K.###..\n.E##..##.#.\n#...##....#\n.@##E..#..#\n......###.#"
+  },
+  {
+   "level_id": "L32",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 19
+   },
+   "text": "..#.#..#..#\n..#.#..#D..\n....K.##...\n..##..##.#.\n#...##....#\n.@##...#..#\n......###.#"
+  },
+  {
+   "level_id": "L33",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 9
+   },
+   "text": "#K......#..\n###..#.....\n##.#.##.#.#\n#.E#.#ED.@#\n...E#...#..\n.##..#.##..\n.###E...##."
+  },
+  {
+   "level_id": "L33",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#.......#..\n###..#.....\n##.#.##.#.#\n#.E#.#ED.@#\n...E#...#..\n.##..#.##..\n.###E...##."
+  },
+  {
+   "level_id": "L33",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 2,
+    "key_door": 9
+   },
+   "text": "#K.@....#..\n###..#.....\n##.#.##.#.#\n#.E#.#ED.@#\n...E#...#..\n.##..#.##..\n.###E...##."
+  },
+  {
+   "level_id": "L33",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "#K......#..\n###..#.....\n##.#.####.#\n#.E#.##D#@#\n...E#..##..\n.##..#.##..\n.###E...##."
+  },
+  {
+   "level_id": "L33",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 9
+   },
+   "text": "#K......#..\n###..#.....\n##.#.##.#.#\n#..#.#.D.@#\n....#...#..\n.##..#.##..\n.###....##."
+  },
+  {
+   "level_id": "L34",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 8,
+    "key_door": 14
+   },
+   "text": "...#####.##\n##..D##....\n...#....#.#\n.#..####.#.\n..#.#.E#.#.\n..##K#.#..@\n....E....#E"
+  },
+  {
+   "level_id": "L34",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "...#####.##\n##..D##....\n...#....#.#\n.#..####.#.\n..#.#.E#.#.\n..##.#.#..@\n....E....#E"
+  },
+  {
+   "level_id": "L34",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 12,
+    "key_door": 14
+   },
+   "text": "...#####.##\n##..D##....\n...#....#.#\n.#@.####.#.\n..#.#.E#.#.\n..##K#.#..@\n....E....#E"
+  },
+  {
+   "level_id": "L34",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "...#####.##\n##.#D##....\n...##...#.#\n.#..####.#.\n..#.#.E#.#.\n..##K#.#..@\n....E....#E"
+  },
+  {
+   "level_id": "L34",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 14
+   },
+   "text": "...#####.##\n##..D##....\n...#....#.#\n.#..####.#.\n..#.#..#.#.\n..##K#.#..@\n.........#."
+  },
+  {
+   "level_id": "L35",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 18
+   },
+   "text": "###.....#.#\n#.E..##...#\n..DE#.##..E\n.###..####.\n##@.#.#....\n#......K#..\n#.....#.#E#"
+  },
+  {
+   "level_id": "L35",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "###.....#.#\n#.E..##...#\n..DE#.##..E\n.###..####.\n##@.#.#....\n#.......#..\n#.....#.#E#"
+  },
+  {
+   "level_id": "L35",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 18
+   },
+   "text": "###.....#.#\n#.E..##...#\n..DE#@##..E\n.###..####.\n##@.#.#....\n#......K#..\n#.....#.#E#"
+  },
+  {
+   "level_id": "L35",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 2,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "###.....#.#\n#.#..##...#\n.#D##.##..E\n.###..####.\n##@.#.#....\n#......K#..\n#.....#.#E#"
+  },
+  {
+   "level_id": "L35",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 18
+   },
+   "text": "###.....#.#\n#....##...#\n..D.#.##...\n.###..####.\n##@.#.#....\n#......K#..\n#.....#.#.#"
+  },
+  {
+   "level_id": "L36",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "#....#.....\n.....E...##\n##E.#.E.###\n..@##.#..##\n#..#....K#.\n#.###.##E..\n#.D.#.#..##"
+  },
+  {
+   "level_id": "L36",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#....#.....\n.....E...##\n##E.#.E.###\n..@##.#..##\n#..#.....#.\n#.###.##E..\n#.D.#.#..##"
+  },
+  {
+   "level_id": "L36",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "#....#.....\n.....E...##\n##E.#.E.###\n..@##.#..##\n#..#.@..K#.\n#.###.##E..\n#.D.#.#..##"
+  },
+  {
+   "level_id": "L36",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "#....#.....\n.....E...##\n##E.#.E.###\n..@##.#..##\n#..#....K#.\n#.###.##E..\n##D##.#..##"
+  },
+  {
+   "level_id": "L36",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 16
+   },
+   "text": "#....#.....\n.........##\n##..#...###\n..@##.#..##\n#..#....K#.\n#.###.##...\n#.D.#.#..##"
+  },
+  {
+   "level_id": "L37",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "..#..#...#E\n.#.E..E.##.\n.....K#....\n.#..#.##.#.\n#....#.....\nE.##...#...\n.@.D###...#"
+  },
+  {
+   "level_id": "L37",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "..#..#...#E\n.#.E..E.##.\n......#....\n.#..#.##.#.\n#....#.....\nE.##...#...\n.@.D###...#"
+  },
+  {
+   "level_id": "L37",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "..#..#...#E\n.#.E..E.##.\n.....K#....\n.#..#.##.#.\n#....#.....\nE.##...#...\n.@.D###@..#"
+  },
+  {
+   "level_id": "L37",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "..#..#...#E\n.#.E..E.##.\n.....K#....\n.#..#.##.#.\n#....#.....\nE.##...#...\n.@#D###...#"
+  },
+  {
+   "level_id": "L37",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 10
+   },
+   "text": "..#..#...#.\n.#......##.\n.....K#....\n.#..#.##.#.\n#....#.....\n..##...#...\n.@.D###...#"
+  },
+  {
+   "level_id": "L38",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": "#..#####..#\n#..##.###..\n...#.......\n.DE.@...#.#\n#...##...E.\n#####...#..\n.E.K..####E"
+  },
+  {
+   "level_id": "L38",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#..#####..#\n#..##.###..\n...#.......\n.DE.@...#.#\n#...##...E.\n#####...#..\n.E....####E"
+  },
+  {
+   "level_id": "L38",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": "#..#####..#\n#..##.###..\n...#.......\n.DE.@...#@#\n#...##...E.\n#####...#..\n.E.K..####E"
+  },
+  {
+   "level_id": "L38",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5131,
+   "facts": {
+    "regions": 4,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 8,
+    "key_door": -1
+   },
+   "text": "#..#####..#\n#..##.###..\n.#.#.......\n#D#.@...#.#\n##..##...E.\n#####...#..\n.E.K..####E"
+  },
+  {
+   "level_id": "L38",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 8,
+    "key_door": 11
+   },
+   "text": "#..#####..#\n#..##.###..\n...#.......\n.D..@...#.#\n#...##.....\n#####...#..\n...K..####."
+  },
+  {
+   "level_id": "L39",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": ".#.K.#.####\n.....#.....\n..#..E.#E.#\n#...#####.#\nE...#.#.D##\n#@#.....##.\n..##.....E."
+  },
+  {
+   "level_id": "L39",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".#...#.####\n.....#.....\n..#..E.#E.#\n#...#####.#\nE...#.#.D##\n#@#.....##.\n..##.....E."
+  },
+  {
+   "level_id": "L39",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": ".#.K.#.####\n.....#.....\n..#..E.#E.#\n#...#####.#\nE...#.#.D##\n#@#.....##.\n.@##.....E."
+  },
+  {
+   "level_id": "L39",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": -1
+   },
+   "text": ".#.K.#.####\n.....#.....\n..#..E.#E.#\n#...#####.#\nE...#.##D##\n#@#.....##.\n..##.....E."
+  },
+  {
+   "level_id": "L39",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 7,
+    "key_door": 11
+   },
+   "text": ".#.K.#.####\n.....#.....\n..#....#..#\n#...#####.#\n....#.#.D##\n#@#.....##.\n..##......."
+  },
+  {
+   "level_id": "L40",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 5,
+    "key_door": 16
+   },
+   "text": ".##.#..E..#\n.......#...\nE.K##.#####\n.####.#..DE\n.@..#..#.##\n##..#.#...E\n##.#....#.."
+  },
+  {
+   "level_id": "L40",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".##.#..E..#\n.......#...\nE..##.#####\n.####.#..DE\n.@..#..#.##\n##..#.#...E\n##.#....#.."
+  },
+  {
+   "level_id": "L40",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 15,
+    "key_door": 16
+   },
+   "text": ".##.#..E..#\n.......#...\nE.K##.#####\n.####.#.@DE\n.@..#..#.##\n##..#.#...E\n##.#....#.."
+  },
+  {
+   "level_id": "L40",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 5,
+    "key_door": -1
+   },
+   "text": ".##.#..E..#\n.......#...\nE.K##.#####\n.####.#.#D#\n.@..#..#.##\n##..#.#...E\n##.#....#.."
+  },
+  {
+   "level_id": "L40",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 5,
+    "key_door": 16
+   },
+   "text": ".##.#.....#\n.......#...\n..K##.#####\n.####.#..D.\n.@..#..#.##\n##..#.#....\n##.#....#.."
+  },
+  {
+   "level_id": "L41",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "....E.##...\nK..#.#.#.#E\n####....#..\n##E.#.##...\n##..E..@...\n#..##..##..\n..###..##.D"
+  },
+  {
+   "level_id": "L41",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "....E.##...\n...#.#.#.#E\n####....#..\n##E.#.##...\n##..E..@...\n#..##..##..\n..###..##.D"
+  },
+  {
+   "level_id": "L41",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 4,
+    "key_door": 17
+   },
+   "text": "...@E.##...\nK..#.#.#.#E\n####....#..\n##E.#.##...\n##..E..@...\n#..##..##..\n..###..##.D"
+  },
+  {
+   "level_id": "L41",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 12,
+    "key_door": -1
+   },
+   "text": "....E.##...\nK..#.#.#.#E\n####....#..\n##E.#.##...\n##..E..@...\n#..##..##.#\n..###..###D"
+  },
+  {
+   "level_id": "L41",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 12,
+    "key_door": 17
+   },
+   "text": "......##...\nK..#.#.#.#.\n####....#..\n##..#.##...\n##.....@...\n#..##..##..\n..###..##.D"
+  },
+  {
+   "level_id": "L42",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 13
+   },
+   "text": "#..######.#\n.D##..EE..#\n#.#.....E.@\n....#....#.\nE...#......\n...#..#..#.\n#.#..#.K..."
+  },
+  {
+   "level_id": "L42",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#..######.#\n.D##..EE..#\n#.#.....E.@\n....#....#.\nE...#......\n...#..#..#.\n#.#..#....."
+  },
+  {
+   "level_id": "L42",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 8,
+    "key_door": 13
+   },
+   "text": "#..######.#\n.D##@.EE..#\n#.#.....E.@\n....#....#.\nE...#......\n...#..#..#.\n#.#..#.K..."
+  },
+  {
+   "level_id": "L42",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": -1
+   },
+   "text": "##.######.#\n#D##..EE..#\n###.....E.@\n....#....#.\nE...#......\n...#..#..#.\n#.#..#.K..."
+  },
+  {
+   "level_id": "L42",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 7,
+    "key_door": 13
+   },
+   "text": "#..######.#\n.D##......#\n#.#.......@\n....#....#.\n....#......\n...#..#..#.\n#.#..#.K..."
+  },
+  {
+   "level_id": "L43",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 7
+   },
+   "text": "#E..D.##E##\n#..###E....\n...###..#..\nK#.##..@##.\n..##.....#.\n...E..##..#\n#.##..#..##"
+  },
+  {
+   "level_id": "L43",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#E..D.##E##\n#..###E....\n...###..#..\n.#.##..@##.\n..##.....#.\n...E..##..#\n#.##..#..##"
+  },
+  {
+   "level_id": "L43",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": 7
+   },
+   "text": "#E..D.##E##\n#..###E....\n...###@.#..\nK#.##..@##.\n..##.....#.\n...E..##..#\n#.##..#..##"
+  },
+  {
+   "level_id": "L43",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 11,
+    "key_door": -1
+   },
+   "text": "#E.#D###E##\n#..###E....\n...###..#..\nK#.##..@##.\n..##.....#.\n...E..##..#\n#.##..#..##"
+  },
+  {
+   "level_id": "L43",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 11,
+    "key_door": 7
+   },
+   "text": "#...D.##.##\n#..###.....\n...###..#..\nK#.##..@##.\n..##.....#.\n......##..#\n#.##..#..##"
+  },
+  {
+   "level_id": "L44",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": 17
+   },
+   "text": "##..#..#E##\n..#..#.....\n#.##...#E..\n.....####..\n##......E#.\n@.E....#.#.\n#....K.##.D"
+  },
+  {
+   "level_id": "L44",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##..#..#E##\n..#..#.....\n#.##...#E..\n.....####..\n##......E#.\n@.E....#.#.\n#......##.D"
+  },
+  {
+   "level_id": "L44",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 2,
+    "key_door": 17
+   },
+   "text": "##..#..#E##\n..#..#.....\n#.##...#E..\n.....####..\n##...@..E#.\n@.E....#.#.\n#....K.##.D"
+  },
+  {
+   "level_id": "L44",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 6,
+    "key_door": -1
+   },
+   "text": "##..#..#E##\n..#..#.....\n#.##...#E..\n.....####..\n##......E#.\n@.E....#.##\n#....K.###D"
+  },
+  {
+   "level_id": "L44",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 6,
+    "key_door": 17
+   },
+   "text": "##..#..#.##\n..#..#.....\n#.##...#...\n.....####..\n##.......#.\n@......#.#.\n#....K.##.D"
+  },
+  {
+   "level_id": "L45",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 4
+   },
+   "text": "#E..###.E.#\n..#......##\n...##.#.K.#\n.###.##.#.#\n@E##.#..D##\n.#.E...####\n.##.......#"
+  },
+  {
+   "level_id": "L45",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "#E..###.E.#\n..#......##\n...##.#...#\n.###.##.#.#\n@E##.#..D##\n.#.E...####\n.##.......#"
+  },
+  {
+   "level_id": "L45",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": 4
+   },
+   "text": "#E..###.E.#\n..#......##\n...##.#.K.#\n.###.##.#.#\n@E##.#..D##\n.#.E...####\n.##...@...#"
+  },
+  {
+   "level_id": "L45",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 14,
+    "key_door": -1
+   },
+   "text": "#E..###.E.#\n..#......##\n...##.#.K.#\n.###.##.#.#\n@E##.#.#D##\n.#.E...####\n.##.......#"
+  },
+  {
+   "level_id": "L45",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 14,
+    "key_door": 4
+   },
+   "text": "#...###...#\n..#......##\n...##.#.K.#\n.###.##.#.#\n@.##.#..D##\n.#.....####\n.##.......#"
+  },
+  {
+   "level_id": "L46",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 16
+   },
+   "text": ".##....#.##\n..#..#.E.##\n@.....#....\n####.#.E..#\n.#K#.##.#..\n.....##DE.#\n..#..E#.###"
+  },
+  {
+   "level_id": "L46",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": ".##....#.##\n..#..#.E.##\n@.....#....\n####.#.E..#\n.#.#.##.#..\n.....##DE.#\n..#..E#.###"
+  },
+  {
+   "level_id": "L46",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 10,
+    "key_door": 16
+   },
+   "text": ".##....#.##\n..#..#.E.##\n@.....#....\n####.#.E@.#\n.#K#.##.#..\n.....##DE.#\n..#..E#.###"
+  },
+  {
+   "level_id": "L46",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5877,
+   "facts": {
+    "regions": 2,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 10,
+    "key_door": -1
+   },
+   "text": ".##....#.##\n..#..#.E.##\n@.....#....\n####.#.E..#\n.#K#.####..\n.....##D#.#\n..#..E#####"
+  },
+  {
+   "level_id": "L46",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 10,
+    "key_door": 16
+   },
+   "text": ".##....#.##\n..#..#...##\n@.....#....\n####.#....#\n.#K#.##.#..\n.....##D..#\n..#...#.###"
+  },
+  {
+   "level_id": "L47",
+   "variant": "none",
+   "defective": false,
+   "quality": 1.0,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 9,
+    "key_door": 10
+   },
+   "text": "##.##.#.#E.\n....#......\n##..E..##..\n....#K....#\n..###.#..##\n#.ED.#.....\nE@.#.#.##.."
+  },
+  {
+   "level_id": "L47",
+   "variant": "no_key",
+   "defective": true,
+   "quality": 0.4375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 0,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": -1,
+    "key_door": -1
+   },
+   "text": "##.##.#.#E.\n....#......\n##..E..##..\n....#.....#\n..###.#..##\n#.ED.#.....\nE@.#.#.##.."
+  },
+  {
+   "level_id": "L47",
+   "variant": "extra_player",
+   "defective": true,
+   "quality": 0.4992,
+   "facts": {
+    "regions": 1,
+    "players": 2,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 4,
+    "player_key": 7,
+    "key_door": 10
+   },
+   "text": "##.##.#.#E.\n....#......\n##..E..##..\n@...#K....#\n..###.#..##\n#.ED.#.....\nE@.#.#.##.."
+  },
+  {
+   "level_id": "L47",
+   "variant": "door_blocked",
+   "defective": true,
+   "quality": 0.5504,
+   "facts": {
+    "regions": 3,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 3,
+    "player_key": 9,
+    "key_door": -1
+   },
+   "text": "##.##.#.#E.\n....#......\n##..E..##..\n....#K....#\n..###.#..##\n#.#D##.....\nE@.#.#.##.."
+  },
+  {
+   "level_id": "L47",
+   "variant": "no_enemies",
+   "defective": true,
+   "quality": 0.9375,
+   "facts": {
+    "regions": 1,
+    "players": 1,
+    "keys": 1,
+    "doors": 1,
+    "enemies": 0,
+    "player_key": 9,
+    "key_door": 10
+   },
+   "text": "##.##.#.#..\n....#......\n##.....##..\n....#K....#\n..###.#..##\n#..D.#.....\n.@.#.#.##.."
+  }
+ ]
+}
