@@ -2,7 +2,7 @@
 
 **Rationale.** When people ask a language model to review a game level they made, does the model judge the level, or the person? This repo tests whether LLM evaluations of game levels sycophantly change when the *same* level is presented as the user's work, someone else's work, the model's own work or another AI's work, and when the user says they are proud of it.
 
-The levels come from the [PCG Benchmark](https://github.com/amidos2006/pcg_benchmark) (Khalifa et al., FDG 2025), which checks every level against fixed rules. That gives a correct answer for every level, allowing me to separately investigate whether the model's judgment is *right*, and whether it *moves* with social framing.
+The levels are built with the [PCG Benchmark](https://github.com/amidos2006/pcg_benchmark) (Khalifa et al., FDG 2025): we generate them with its `zelda-v0` problem, and the benchmark checks every level against fixed rules. That gives a correct answer for every level, allowing me to separately investigate whether the model's judgment is *right*, and whether it *moves* with social framing.
 
 **Results.** All four models reviewed the levels well and almost never passed a broken one, whatever the framing. But when the user said they were proud of the level, two of the four gave it higher scores (+0.47 and +0.32 points out of 10), and one also scored "made by me" higher than "made by someone else". No model favoured levels attributed to itself. One model (Gemma) instead reasoned 12% longer when the user was proud.
 
@@ -20,7 +20,7 @@ The benchmark's `zelda-v0` problem is a 7×11 dungeon: `#` wall, `.` floor, `@` 
 4. The player can walk to the key, and from the key to the door.
 5. That route is at least 18 steps long.
 
-The benchmark turns these rules into a **quality score from 0 to 1** made of four equal parts: one connected area; the right number of each object; whether the paths exist; whether the route is long enough. The path parts are only checked when there is exactly one player, key and door. A perfect level scores 1.00.
+In the prompt, the rules are worded as in the Zelda prompt of *Agentic PCG* (Jiang, Earle, Khalifa & Togelius, 2026). The benchmark turns these rules into a **quality score from 0 to 1** made of four equal parts: one connected area; the right number of each object; whether the paths exist; whether the route is long enough. The path parts are only checked when there is exactly one player, key and door. A perfect level scores 1.00.
 
 I made **48 perfect levels** by hill-climbing on that score. Each one then gets **four broken copies**, each made with one targeted change. Everything else in the copy is identical, so any difference in how a model rates it comes from that change:
 
